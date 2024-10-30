@@ -1,6 +1,6 @@
-## Portfólio - Estrutura de Dados I - Atividade II
+**Portfólio - Estrutura de Dados I - Atividade II**
 
-## Parte 1 – Estudo e Preparação em Grupo (28/10) - Laboratório
+## **Parte 1** – Estudo e Preparação em Grupo (28/10) - Laboratório
 
 Formação dos Grupos: A turma foi dividida em 5 grupos, cada um responsável por estudar, compreender e organizar uma apresentação para cada um dos métodos de ordenação complexos, conforme a divisão já realizada abaixo:
 
@@ -31,7 +31,7 @@ Estudo do Algoritmo: Cada grupo deve pesquisar e entender profundamente o funcio
 Preparação para Apresentação: O grupo deve preparar uma explicação didática para compartilhar seu aprendizado na próxima aula, com cada integrante com seu github atualizado, contendo uma pasta com os conteúdos a serem apresentados em seu portfolio.
 
 
-**Parte 2** – Apresentação dos Métodos de Ordenação (30/10) - Sala de Aula
+## **Parte 2** – Apresentação dos Métodos de Ordenação (30/10) - Sala de Aula
 
 Apresentações em Grupo (15 a 20 minutos): Cada grupo apresenta seu método de ordenação para a turma, abordando:
 
@@ -45,7 +45,7 @@ Comparação Prática: Situações em que cada algoritmo se destaca ou enfrenta 
 Complexidade dos Algoritmos.
 
 
-**Parte 3** – Implementação Individual dos Algoritmos (até 16/11) - via Github
+## **Parte 3** – Implementação Individual dos Algoritmos (até 16/11) - via Github
 
 Cada aluno deverá implementar três métodos de ordenação (Shellsort, Quicksort, Heapsort, RadixSort e/ou Mergesort) de forma independente, seguindo as diretrizes:
 
