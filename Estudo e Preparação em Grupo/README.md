@@ -18,7 +18,7 @@ Formação dos Grupos: A turma foi dividida em 5 grupos, cada um responsável po
     - Ramses de Oliveira Martins
     - Victor Sandro Christ Rodrigues
 
-- Grupo 5: Shellsort
+5. Grupo: Shellsort
 
 Estudo do Algoritmo: Cada grupo deve pesquisar e entender profundamente o funcionamento do método de ordenação designado, elaborar material e apresentar, abordando:
 
