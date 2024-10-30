@@ -1,4 +1,4 @@
-**Portfólio - Estrutura de Dados I - Atividade II**
+## **Portfólio - Estrutura de Dados I - Atividade II**
 
 ## **Parte 1** – Estudo e Preparação em Grupo (28/10) - Laboratório
 
