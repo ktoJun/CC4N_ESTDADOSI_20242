@@ -1,4 +1,4 @@
-#### Passo 2: Organize as Atividades
+## Passo 2: Organize as Atividades
 As atividades serão postadas no blog da disciplina e devem ser organizadas de acordo com o cronograma abaixo:
 
 - **Atividade 2: até 16/11/2024**  
