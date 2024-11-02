@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
+
+/* Descomente a função onde está comentada de "!!" para ver o processo de ordenação. */
+
 // Função para trocar os valores de duas variáveis
 void swap(int *x, int *y) {
     int temp;
@@ -27,7 +30,7 @@ void insertion_sort (int array[], int array_size) {
     j = i;
     while ((j > 0) && (array[j-1] > array[j])) {
       swap(&array[j-1], &array[j]);
-      print_array(array, array_size);
+      //print_array(array, array_size); /*!!*/
       j--;
     }
   }
