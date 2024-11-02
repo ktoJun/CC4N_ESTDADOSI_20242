@@ -11,13 +11,24 @@ void swap(int *x, int *y) {
     *y = temp;
 }
 
+// Função para printar cada ordenação realizado no array
+void print_array(int array[], int array_size) {
+    for (int i = 0; i < array_size; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
+
 // Função de ordenação por bolha (Bubble Sort)
 void bubble_sort(int array[], int array_size) {
     int i, j;
 
     for (i = 0; i < array_size - 1; i++) {
         for (j = array_size - 1; j >= i + 1; j--) {
-            if (array[j] < array[j - 1]) { swap(&array[j], &array[j - 1]); }
+            if (array[j] < array[j - 1]) { 
+                swap(&array[j], &array[j - 1]);
+                print_array(array, array_size);
+            }
         }
     }
 }
