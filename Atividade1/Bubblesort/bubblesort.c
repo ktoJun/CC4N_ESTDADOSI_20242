@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-//Para manter o seu olho bem, o print do processo da ordenação está comentada.
-//Descomente a função onde está comentada de "!!" para ver o processo de ordenação.
+
+
+/*  Descomente a função onde está comentada de "!!" para ver o processo de ordenação.  */
 
 // Função para trocar os valores de duas variáveis
 void swap(int *x, int *y) {
