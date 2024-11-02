@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+//Comente a função onde está comentada de "!!" para manter o seu olho bem.
 
 // Função para trocar os valores de duas variáveis
 void swap(int *x, int *y) {
@@ -11,6 +12,7 @@ void swap(int *x, int *y) {
     *y = temp;
 }
 
+ /*!!*/
 // Função para printar cada ordenação realizado no array
 void print_array(int array[], int array_size) {
     for (int i = 0; i < array_size; i++) {
@@ -27,6 +29,8 @@ void bubble_sort(int array[], int array_size) {
         for (j = array_size - 1; j >= i + 1; j--) {
             if (array[j] < array[j - 1]) { 
                 swap(&array[j], &array[j - 1]);
+                
+                 /*!!*/
                 print_array(array, array_size);
             }
         }
