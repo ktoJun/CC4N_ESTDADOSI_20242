@@ -16,7 +16,6 @@ Formação dos Grupos: A turma foi dividida em 5 grupos, cada um responsável po
     - Kauan Modolo Carriço
     - Nathalia Bertordo Alberto
     - Ramses de Oliveira Martins
-    - Victor Sandro Christ Rodrigues
 
 5. Grupo: Shellsort
 
