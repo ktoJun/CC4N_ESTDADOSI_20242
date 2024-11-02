@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-//Comente a função onde está comentada de "!!" para manter o seu olho bem.
+//Para manter o seu olho bem, o print do processo da ordenação está comentada.
+//Descomente a função onde está comentada de "!!" para ver o processo de ordenação.
 
 // Função para trocar os valores de duas variáveis
 void swap(int *x, int *y) {
@@ -12,7 +13,6 @@ void swap(int *x, int *y) {
     *y = temp;
 }
 
- /*!!*/
 // Função para printar cada ordenação realizado no array
 void print_array(int array[], int array_size) {
     for (int i = 0; i < array_size; i++) {
@@ -29,9 +29,7 @@ void bubble_sort(int array[], int array_size) {
         for (j = array_size - 1; j >= i + 1; j--) {
             if (array[j] < array[j - 1]) { 
                 swap(&array[j], &array[j - 1]);
-                
-                 /*!!*/
-                print_array(array, array_size);
+                //print_array(array, array_size); /*!!*/
             }
         }
     }
@@ -54,16 +52,15 @@ int main(void) {
 
     // Printar na tela a sequência original
     printf("Antes da ordenação: ");
-    for (i = 0; i < 50; i++) { printf("%d ", array[i]); }
-    printf("\n");
+    print_array(array, 50);
 
-    // Função para ordenação através de bubble_sort
+    // Função para ordenação através de insert_sort
+    printf("\nProcesso de ordenação:\n");
     bubble_sort(array, 50);
 
     // Printar na tela a sequência ordenada
-    printf("Depois da ordenação: ");
-    for (i = 0; i < 50; i++) { printf("%d ", array[i]); }
-    printf("\n");
+    printf("\nDepois da ordenação: ");
+    print_array(array, 50);
 
     return 0;
 }
