@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+
 /*  Descomente a função onde está comentada de "!!" para ver o processo de ordenação.  */
 
 // Função para trocar os valores de duas variáveis
