@@ -14,7 +14,7 @@ Entrega: Cada aluno deverá entregar os códigos implementados, com análises de
 
 ---
 
-## **Análise de Complexidade - Radix Sort**
+## **2. Análise de Complexidade** - Radix Sort
 
 ### **Complexidade de Tempo**
 
@@ -26,59 +26,64 @@ Entrega: Cada aluno deverá entregar os códigos implementados, com análises de
    No caso ideal, o Radix Sort realiza um número fixo de passes sobre os dados, onde a distribuição dos elementos nos "buckets" é eficiente e a ordenação de cada "bucket" é feita rapidamente. Como não depende da distribuição dos dados, o tempo é linear em relação ao número de elementos.
 
 2. **Caso Médio (O(nk))**:  
-   No caso médio, o Radix Sort também tem complexidade O(nk), pois o número de passes e a distribuição dos dados continuam a depender do número de dígitos. Como o algoritmo não compara diretamente os elementos, a complexidade depende principalmente da base de números e do número de passes necessários.
+   No caso médio, o Radix Sort também tem complexidade `O(nk)`, pois o número de passes e a distribuição dos dados continuam a depender do número de dígitos. Como o algoritmo não compara diretamente os elementos, a complexidade depende principalmente da base de números e do número de passes necessários.
 
 3. **Pior Caso (O(nk))**:  
-   No pior caso, o Radix Sort também possui O(nk) de complexidade. Isso ocorre porque, independentemente da distribuição dos dados, o algoritmo realiza k passes sobre os dados, e o tempo por passagem é proporcional ao número de elementos (n).
+   No pior caso, o Radix Sort também possui `O(nk)` de complexidade. Isso ocorre porque, independentemente da distribuição dos dados, o algoritmo realiza k passes sobre os dados, e o tempo por passagem é proporcional ao número de elementos (n).
 
 ### **Complexidade de Espaço**
 
 1. **Melhor Caso (O(n))**:  
-   O espaço utilizado é proporcional ao número de elementos, pois o Radix Sort precisa de uma estrutura extra (como um array ou fila) para armazenar os "buckets". O espaço utilizado é O(n), já que são necessários **n** espaços para armazenar os dados durante a ordenação.
+   O espaço utilizado é proporcional ao número de elementos, pois o Radix Sort precisa de uma estrutura extra (como um array ou fila) para armazenar os "buckets". O espaço utilizado é `O(n)`, já que são necessários **n** espaços para armazenar os dados durante a ordenação.
 
 2. **Caso Médio (O(n))**:  
-   No caso médio, o espaço adicional usado pelo Radix Sort também é O(n). A complexidade de espaço é dominada pelo armazenamento temporário para a distribuição dos elementos durante o processo de ordenação.
+   No caso médio, o espaço adicional usado pelo Radix Sort também é `O(n)`. A complexidade de espaço é dominada pelo armazenamento temporário para a distribuição dos elementos durante o processo de ordenação.
 
 3. **Pior Caso (O(n))**:  
-   No pior caso, o espaço adicional é O(n), pois a estrutura de armazenamento dos elementos continua a ser de tamanho proporcional ao número de elementos.
+   No pior caso, o espaço adicional é `O(n)`, pois a estrutura de armazenamento dos elementos continua a ser de tamanho proporcional ao número de elementos.
 
 ---
 
-## **Execução de Testes - Radix Sort**
+## **3. Execução de Testes** - Radix Sort
 
 ### **Testes e Expectativas de Comportamento**
 
-1. **Array Aleatório**:
-   - **Descrição**: Para um array com elementos aleatórios, o Radix Sort deve funcionar de forma eficiente, com tempo de execução de O(nk), sendo o valor de k o número de dígitos dos números. Para inteiros de tamanho fixo, o desempenho tende a ser muito bom.
+### **Array Aleatório**:
+   - **Descrição**: Para um array com elementos aleatórios, o Radix Sort deve funcionar de forma eficiente, com tempo de execução de `O(nk)`, sendo o valor de k o número de dígitos dos números. Para inteiros de tamanho fixo, o desempenho tende a ser muito bom.
    - **Comportamento Esperado**: O Radix Sort irá ordenar os elementos em tempo linear com relação ao número de elementos e ao número de dígitos. Para arrays de tamanho razoável e números com poucos dígitos, o tempo de execução será eficiente.
 
-   **Exemplo de Saída de Testes**:
-   - **Antes da ordenação**: 53, 92, 45, 81, 34, 61, 67, 72, 42, 80  
-   - **Depois da ordenação**: 34, 42, 45, 53, 61, 67, 72, 80, 81, 92
-
-2. **Array Já Ordenado**:
+### **Array Já Ordenado**:
    - **Descrição**: Mesmo que o array já esteja ordenado, o Radix Sort ainda realiza o mesmo número de passes para ordenar os dados. Isso ocorre porque o algoritmo não realiza comparações diretas entre os elementos, mas sim distribui os números em "buckets" com base nos seus dígitos.  
-   - **Comportamento Esperado**: O Radix Sort manterá a mesma complexidade O(nk) independentemente de o array estar ou não ordenado.
+   - **Comportamento Esperado**: O Radix Sort manterá a mesma complexidade `O(nk)` independentemente de o array estar ou não ordenado.
 
-   **Exemplo de Saída de Testes**:
-   - **Antes da ordenação**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10  
-   - **Depois da ordenação**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+### **Array em Ordem Reversa**:
+   - **Descrição**: Para arrays em ordem inversa, o Radix Sort ainda irá ordenar os elementos de forma eficiente, já que ele não depende da ordem atual dos elementos. O tempo de execução será `O(nk)`, e o algoritmo continuará a realizar a ordenação de maneira estável, sem depender da ordem original dos dados.  
+   - **Comportamento Esperado**: A ordem reversa não impacta o desempenho, que continua sendo `O(nk)`.
 
-3. **Array em Ordem Reversa**:
-   - **Descrição**: Para arrays em ordem inversa, o Radix Sort ainda irá ordenar os elementos de forma eficiente, já que ele não depende da ordem atual dos elementos. O tempo de execução será O(nk), e o algoritmo continuará a realizar a ordenação de maneira estável, sem depender da ordem original dos dados.  
-   - **Comportamento Esperado**: A ordem reversa não impacta o desempenho, que continua sendo O(nk).
+---
 
-   **Exemplo de Saída de Testes**:
-   - **Antes da ordenação**: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1  
-   - **Depois da ordenação**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+### **Exemplo de Saída de Testes**:
 
-4. **Arrays Muito Grandes**:
-   - **Descrição**: Para arrays muito grandes, o Radix Sort ainda mantém a complexidade de O(nk). O desempenho é eficiente em termos de tempo, mas pode ser afetado pela quantidade de dígitos que os números possuem. Para números muito grandes (com muitos dígitos), o valor de k aumenta, o que pode resultar em maior tempo de execução.
-   - **Comportamento Esperado**: O Radix Sort lida bem com grandes quantidades de dados, desde que o número de dígitos não seja excessivamente grande. Se os números forem de tamanho razoável, o algoritmo deve continuar sendo eficiente.
+Para um **array aleatório** de 10 elementos:
 
-   **Exemplo de Saída de Testes** (em um array muito grande de 1.000.000 de elementos):
-   - **Antes da ordenação**: Uma sequência de números aleatórios.
-   - **Depois da ordenação**: Uma sequência de números ordenados do menor para o maior.
+```
+Antes da ordenação: 53, 92, 45, 81, 34, 61, 67, 72, 42, 80  
+Depois da ordenação: 34, 42, 45, 53, 61, 67, 72, 80, 81, 92
+```
+
+Para um **array já ordenado** de 10 elementos:
+
+```
+Antes da ordenação: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10  
+Depois da ordenação: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+```
+
+Para um **array em ordem inversa** de 10 elementos:
+
+```
+Antes da ordenação: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1  
+Depois da ordenação: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+```
 
 ---
 
