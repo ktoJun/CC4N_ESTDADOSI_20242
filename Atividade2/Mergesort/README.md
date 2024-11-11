@@ -1,4 +1,6 @@
-## **Portfólio - Estrutura de Dados I - Atividade II**
+**Portfólio - Estrutura de Dados I - Atividade II**
+
+---
 
 ## **Parte 2** – Implementação Individual dos Algoritmos (até 16/11) - via Github
 
