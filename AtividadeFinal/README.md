@@ -6,8 +6,8 @@ Este repositório contém a implementação de duas estruturas de árvore binár
 
 1. [Árvore Binária de Busca (BST)](https://github.com/ktoJun/CC4N_ESTDADOSI_20242/tree/main/AtividadeFinal/BST)
 2. [Árvore AVL](https://github.com/ktoJun/CC4N_ESTDADOSI_20242/tree/main/AtividadeFinal/AVL)
-3. [Como executar o código](https://www.onlinegdb.com/online_c_compiler)
 
+ 
 ---
 
 ## Árvore Binária de Busca (BST)
@@ -50,11 +50,5 @@ A **Árvore AVL** é uma árvore binária de busca balanceada, onde a diferença
 - **`insert_into_array_and_tree(int array[], int* size, int value, Node** root)`**: Insere um valor no array e na árvore AVL.
 - **`delete_from_array_and_tree(int array[], int* size, int value, Node** root)`**: Deleta um valor do array e da árvore AVL, mantendo o balanceamento.
 
----
 
-## Como executar o código
 
-1. Clone este repositório em sua máquina local.
-2. Compile os códigos com um compilador C, como o `gcc`:
-   ```bash
-   gcc -o arvore arvore.c
